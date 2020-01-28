@@ -1,0 +1,11 @@
+## Comment: we have to check is x is a square matrix to can invert it
+##          Then if x is a square, we invert it, using inverse(x), 
+##          if not print the message"This matrix cannot be inverted
+
+makeCacheMatrix<- function(x = matrix()){
+  if (ncol(x)==nrow(x)){    ## X matrix is a square matrix
+    y<-inverse(x)  
+    } else {y<-x
+    print("This matrix cannot be inverted")}
+    print(y)
+}  
